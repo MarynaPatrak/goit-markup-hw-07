@@ -366,6 +366,7 @@ img {
 }
 
 .team-item {
+    width: 264px;
     flex-basis: 100%;
     background-color: var(--white);
     border-radius: 4px;
