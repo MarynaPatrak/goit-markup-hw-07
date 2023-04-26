@@ -84,7 +84,7 @@ img {
     padding-right: 16px;
     /* border: 2px solid tomato; */
 
-    @media screen and (min-width: 428px) {
+    /* @media screen and (min-width: 428px) {
         width: 428px;
     }
 
@@ -94,7 +94,7 @@ img {
 
     @media screen and (min-width: 1158px) {
         width: 1158px;
-    }
+    } */
 }
 
 .section {
@@ -207,7 +207,7 @@ img {
 
 .hero {
     background: var(--grey);
-    width: 1440px;
+    /* width: 1440px; */
     margin: 0 auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/people-office.jpg");
     background-position: center;
@@ -217,17 +217,19 @@ img {
 .hero-container {
     display: flex;
     flex-direction: column;
-    padding: 188px 316px;
+    padding: 112px 54px;
     background-position: center;
 }
 
 .hero-title {
     margin: 0 auto;
-    width: 496px;
-    margin-bottom: 48px;
+    width: 320px;
+    margin-bottom: 72px;
 
-    font-size: 56px;
-    line-height: 1.07;
+    /* font-size: 56px;
+    line-height: 1.07; */
+    font-size: 36px;
+    line-height: 1.1;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--white);
@@ -913,19 +915,13 @@ img {
     background-color: var(--ocean);
 }
 
-@media screen and (max-width: 428px) {
-    .acts-container {
-        visibility: hidden;
-    }
-}
-
 @media screen and (min-width: 428px) {
+    .container {
+        width: 428px;
+    }
+
     .functions-item {
         width: 100%;
-    }
-
-    .acts-container {
-        visibility: hidden;
     }
 
     .team-list {
@@ -933,9 +929,7 @@ img {
     }
 }
 
-@media screen and (max-width: 768px) {
-        width: 584px;
-
+@media screen and (max-width: 768px) { 
     .functions-item:not(:last-child) {
         margin-bottom: 72px;
     }
@@ -943,27 +937,27 @@ img {
     .team-item:not(:last-child) {
         margin-bottom: 72px;
     }
-
-    .customers-list {
-        gap: 72px 24px;
-    }
-
-    .customers-link {
-        width: 168px;
-    }
 }
 
 @media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+
+    .hero-container {
+        padding: 112px 136px;
+    }
+
+    .hero-title {
+        width: 496px;
+        margin-bottom: 36px;
+        font-size: 56px;
+        line-height: 1.07;
+    }
+
     .functions-list {
         display: flex;
         gap: 72px 24px;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-
-    .customers-list {
-        display: flex;
-        gap: 72px 16px;
         flex-wrap: wrap;
         flex-direction: row;
     }
@@ -976,10 +970,6 @@ img {
 
     .functions-item-title {
         text-align: left;
-    }
-
-    .acts-item {
-        visibility: hidden;
     }
 
     .team-container>.container {
@@ -1003,22 +993,53 @@ img {
         margin-right: 12px;
         margin-bottom: 64px;
     } 
+
+    .customers-container {
+        width: 584px;
+    }
+
+    .customers-list {
+        display: flex;
+        gap: 72px 24px;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .customers-link {
+        width: 168px;
+    }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+/* @media screen and (min-width: 768px) and (max-width: 1157px) {
     .team-item::nth-child(n2) {
         margin-right: 0;
     }
     
     .team-item::nth-last-child(-n+2) {
         margin-bottom: 0;
+    } 
+}*/
+
+@media screen and (max-width: 1158px) {
+    .acts {
+        display: none;
     }
 }
 
 @media screen and (min-width: 1158px) {
     .container {
+        width: 1158px;
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .hero-container {
+        padding: 188px 316px;
+    }
+
+    .hero-title {
+        width: 496px;
+        margin-bottom: 48px;
     }
 
     .functions {
@@ -1029,11 +1050,7 @@ img {
         display: flex;
         justify-content: center;
     }
-    
-    .functions-list .functions-item+.functions-item {
-        /* margin-left: 24px; */
-    }
-    
+        
     .functions-list .functions-item {
         width: 264px;
         gap: 24px;
@@ -1076,18 +1093,6 @@ img {
     .icon-astronaut::before {
         background-image: url("../images/functions/astronaut.svg");
     }
-
-    .acts-container {
-        visibility: visible;
-    }
-
-    .acts-item {
-        visibility: visible;
-    }
-
-    .acts {
-        padding-bottom: 120px;
-    }
     
     .acts-title {
         margin-bottom: 72px;
@@ -1120,6 +1125,7 @@ img {
     .team-list .team-item+.team-item {
         margin-left: 24px;
     }
+
 }
 
     
