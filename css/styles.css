@@ -909,10 +909,13 @@ img {
     }
 
     .menu-mob-link {
+        font-style: normal;
         font-weight: 700;
         font-size: 36px;
         line-height: 1.11;
         letter-spacing: 0.02em;
+        text-align: left;
+        vertical-align: top;
         color: var(--navy-blue);
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -1116,6 +1119,7 @@ img {
     }
     
     .mob-tel-link {
+        font-style: normal;
         font-weight: 700;
         font-size: 36px;
         line-height: 1.11;
@@ -1125,6 +1129,7 @@ img {
     }
 
     .mob-email-link {
+        font-style: normal;
         font-weight: 500;
         font-size: 20px;
         line-height: 1.02;
